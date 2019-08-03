@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="[ col-xs-12 col-sm-offset-2 col-sm-12]">
+            <ul *ngIf="list" class="event-list">
+                <li *ngFor="let item of list">
+                    <time>
+                        <span class="number">{{item.question_score}}</span>
+                        <span class="number">votes</span>
+                        <span *ngIf="item.answer_count>=0" class="number">{{item.answer_count}}</span>
+                        <span *ngIf="item.answer_count>=0" class="number">answers</span>
+                    </time>
+                    <div class="info">
+                        <div title="{{item.title}}" class="title" [innerHTML]="item.title">Q: </div>
+                        <p class="desc" [innerHTML]="item.body">United States Holiday</p>
+                        <ul>
+                            <li style="width:50%;">
+                                    <span class="tag" *ngFor="let tag of item.tags">{{tag}}</span> 
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
