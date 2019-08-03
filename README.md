@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
+# Setting up the environment
+
+1.) First make sure your system has Node installed. If not, please have a look at https://angular.io/guide/setup-local to setup the environment.
+
+2.) Download one code editor (VS code).
+
+3.) Take a clone of this repository.
+
+4.) Open it in VS code editor. Go to Integreted terminal(you will find that in view tab) and run "npm install".
+
+5.) Now run "ng serve".
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
